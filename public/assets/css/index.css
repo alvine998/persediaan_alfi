@@ -1,0 +1,74 @@
+.text-gradient {
+  background: -webkit-linear-gradient(180deg, #00458b 0%, #3fd2c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradients {
+  background: #00458b;
+  background: -webkit-gradient(linear, right top, left top, from(#00458b), to(#3fd2c7));
+  background: linear-gradient(-90deg, #00458b 0%, #3fd2c7 100%);
+  outline: 0;
+  border: 0;
+}
+
+.link-active {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  color: white;
+}
+
+.link-active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #dc3545;
+  z-index: -1;
+}
+
+.navbar {
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar .notification {
+  position: relative;
+}
+
+.navbar .notification small {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  -webkit-transform: translate(15px, -5px);
+          transform: translate(15px, -5px);
+  color: red;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.login {
+  position: relative;
+  overflow: hidden;
+}
+
+.login .login-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-position: top center;
+     object-position: top center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: -1;
+  opacity: .3;
+}
+/*# sourceMappingURL=index.css.map */
